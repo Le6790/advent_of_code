@@ -1,7 +1,7 @@
 # https://adventofcode.com/2023/day/1
 import sys
 
-
+# python3 day_1.py inputs/actual_input.txt
 def calculate_calibration_sum(calibration_lines):
     calibration_sum = 0
     for line in calibration_lines:

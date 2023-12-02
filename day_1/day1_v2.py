@@ -2,6 +2,8 @@ import re
 import sys
 
 
+# python3 day_1_v2.py input/actual_input.txt
+
 def word_to_val(word):
     match word:
         case "one": return "1"
