@@ -2,6 +2,8 @@
 import sys
 
 # python3 day_1.py inputs/actual_input.txt
+
+
 def calculate_calibration_sum(calibration_lines):
     calibration_sum = 0
     for line in calibration_lines:
@@ -30,7 +32,6 @@ def adjust_calibration_lines(calibration_lines):
         line = line.replace("seven", "s7n")
         line = line.replace("eight", "e8t")
         line = line.replace("nine", "n9e")
-        print(line)
         adjusted_calibration_lines.append(line)
 
     return adjusted_calibration_lines
@@ -46,11 +47,11 @@ def main():
                 pass
             calibration_lines.append(line.strip())
 
-    print(calculate_calibration_sum(calibration_lines))
+    print(f"Part1: {calculate_calibration_sum(calibration_lines)}")
 
     adjusted_calibration_lines = adjust_calibration_lines(calibration_lines)
 
-    print(calculate_calibration_sum(adjusted_calibration_lines))
+    print(f"Part2: {calculate_calibration_sum(adjusted_calibration_lines)}")
 
 
 if __name__ == "__main__":
